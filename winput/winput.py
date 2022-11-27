@@ -2,7 +2,7 @@ import msvcrt
 from threading import Thread
 from typing import Callable
 
-from lib.binds import Keys
+from winput.binds import Keys
 
 
 # Type hint alias

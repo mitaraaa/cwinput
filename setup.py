@@ -6,7 +6,7 @@ setuptools.setup(
     author="Zhilkaidarov Damir",
     description="Listen to raw input from console",
     packages=[
-        "lib"
+        "winput"
     ],
     classifiers=[
         "Development Status :: 3 - Alpha"
