@@ -12,5 +12,5 @@ keyboard = CWInput()
 keyboard.subscribe(listener) # Add new listener
 
 keyboard.run() # Run CWInput in a new thread
-keyboard.join() # Joins CWInput thread to parernt thread, inherited from Thread class
+keyboard.join() # Joins CWInput thread to parent thread, inherited from Thread class
 ```
