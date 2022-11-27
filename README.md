@@ -1,4 +1,4 @@
-# WInput
+# CWInput
 
 Simple Windows-oriented library to read raw input from console using multithreading
 
@@ -8,9 +8,9 @@ Simple Windows-oriented library to read raw input from console using multithread
 def listener(key: Key):
     print(f"Got {key} from keyboard")
 
-keyboard = WInput()
+keyboard = CWInput()
 keyboard.subscribe(listener) # Add new listener
 
-keyboard.run() # Run WInput in a new thread
-keyboard.join() # Joins WInput thread to parernt thread, inherited from Thread class
+keyboard.run() # Run CWInput in a new thread
+keyboard.join() # Joins CWInput thread to parernt thread, inherited from Thread class
 ```

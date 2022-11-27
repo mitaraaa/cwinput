@@ -2,14 +2,14 @@ import msvcrt
 from threading import Thread
 from typing import Callable
 
-from winput.binds import Keys
+from cwinput.binds import Keys
 
 
 # Type hint alias
 Key = Keys | str
 
 
-class WInput(Thread):
+class CWInput(Thread):
     """
     Simple multithreading Windows library for reading raw input from console.
 
@@ -21,14 +21,14 @@ class WInput(Thread):
     keyboard = WInput()
     keyboard.subscribe(listener) # Add new listener
 
-    keyboard.run() # Run WInput in a new thread
+    keyboard.run() # Run CWInput in a new thread
     ```
     """
 
     listeners = []
 
     def __init__(self) -> None:
-        super(WInput, self).__init__()
+        super(CWInput, self).__init__()
         self.running = False
 
     def subscribe(self, func: Callable) -> None:

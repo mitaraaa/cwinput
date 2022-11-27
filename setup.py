@@ -1,12 +1,12 @@
 import setuptools
 
 setuptools.setup(
-    name="winput",
+    name="cwinput",
     version="0.1",
     author="Zhilkaidarov Damir",
     description="Listen to raw input from console",
     packages=[
-        "winput"
+        "winput",
     ],
     classifiers=[
         "Development Status :: 3 - Alpha"
