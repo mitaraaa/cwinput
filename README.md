@@ -1,6 +1,15 @@
 # CWInput
 
-Simple Windows-oriented library to read raw input from console using multithreading
+Simple Windows-oriented library to read raw input from console using multithreading.
+
+## Installation
+
+You can get this package from [PyPi](https://test.pypi.org/project/winput/)
+
+
+```sh
+pip install cwinput
+```
 
 ## Example
 
