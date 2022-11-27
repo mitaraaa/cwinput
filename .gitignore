@@ -4,3 +4,4 @@ __pycache__
 util
 build
 *.egg-info
+dist
