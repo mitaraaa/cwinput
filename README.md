@@ -4,7 +4,7 @@ Simple Windows-oriented library to read raw input from console using multithread
 
 ## Installation
 
-You can get this package from [PyPi](https://test.pypi.org/project/winput/)
+You can get this package from [PyPi](https://pypi.org/project/cwinput/)
 
 
 ```sh
