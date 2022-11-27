@@ -1,8 +1,8 @@
 import platform
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 if platform.system() != "Windows":
     raise OSError
 
-from main import CWInput, Key, Keys
+from .main import CWInput, Key, Keys
