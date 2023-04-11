@@ -5,6 +5,7 @@ class Keys(Enum):
     """
     List of non-printable characters.
     """
+
     NULL_CHARACTER = b"\0"
     START_OF_HEADING = b"\1"
     START_OF_TEXT = b"\2"
@@ -12,6 +13,25 @@ class Keys(Enum):
     END_OF_TRANSMISSION = b"\4"
     ENQUIRY = b"\5"
     ACKNOWLEDGE = b"\6"
+
+    SIGINT = b"\x03"
+    SIGQUIT = b"\x1c"
+    SIGILL = b"\x04"
+    SIGABRT = b"\x06"
+    SIGFPE = b"\x08"
+    SIGKILL = b"\x09"
+    SIGSEGV = b"\x0b"
+    SIGPIPE = b"\x0d"
+    SIGALRM = b"\x0e"
+    SIGTERM = b"\x0f"
+    SIGCHLD = b"\x11"
+    SIGCONT = b"\x12"
+    SIGSTOP = b"\x13"
+    SIGTSTP = b"\x14"
+    SIGTTIN = b"\x15"
+    SIGTTOU = b"\x16"
+    SIGUSR1 = b"\x1e"
+    SIGUSR2 = b"\x1f"
 
     AUDIBLE_BELL = b"\a"
     BACKSPACE = b"\b"
@@ -61,8 +81,18 @@ class Keys(Enum):
         """
         Get enum key by value, lists escape characters if `escape` flag is provided
         """
-        escapes = [cls.ARROW_UP, cls.ARROW_LEFT, cls.ARROW_DOWN, cls.ARROW_RIGHT,
-                   cls.HOME, cls.PAGE_UP, cls.END, cls.PAGE_DOWN, cls.INSERT, cls.DELETE]
+        escapes = [
+            cls.ARROW_UP,
+            cls.ARROW_LEFT,
+            cls.ARROW_DOWN,
+            cls.ARROW_RIGHT,
+            cls.HOME,
+            cls.PAGE_UP,
+            cls.END,
+            cls.PAGE_DOWN,
+            cls.INSERT,
+            cls.DELETE,
+        ]
         for item in Keys:
             if item.value == value:
                 if item.value in escapes and not escape:

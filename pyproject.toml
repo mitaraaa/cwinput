@@ -1,11 +1,9 @@
 [project]
 name = "cwinput"
-version = "0.1.3"
+version = "0.1.4"
 description = "Listen to raw console input"
 readme = "README.md"
-authors = [
-  { name = "Zhilkaidarov Damir", email = "rustam030201@gmail.com" }
-]
+authors = [{ name = "Zhilkaidarov Damir", email = "rustam030201@gmail.com" }]
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 classifiers = [

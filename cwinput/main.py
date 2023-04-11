@@ -35,7 +35,7 @@ class CWInput(Thread):
         """
         Add new listener
 
-        NOTE: Listener should accept only one parameter 
+        NOTE: Listener should accept only one parameter
         """
         self.listeners.append(func)
 
